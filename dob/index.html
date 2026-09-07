@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Redirecting…</title>
+  <script>
+  (function(){
+    var q = window.location.search || '';
+    // build an absolute URL so redirects work regardless of path handling
+    var target = (window.location.origin || (window.location.protocol + '//' + window.location.host)) + '/beliefs.html' + q;
+    try{ window.location.replace(target); } catch(e){ window.location.href = target; }
+  })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="/beliefs.html">the page</a>…</p>
+</body>
+</html>
